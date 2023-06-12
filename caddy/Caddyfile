@@ -23,9 +23,9 @@
     reverse_proxy alertmanager:9093
 }
 
-:9091 {
+:9092 {
     basicauth /* {
         {$ADMIN_USER} {$ADMIN_PASSWORD_HASH}
     }    
-    reverse_proxy pushgateway:9091
+    reverse_proxy pushgateway:9092
 }
